@@ -42,7 +42,7 @@ public class Lager {
             FuelleAuf(behaelter.GetWare());
         }
     }
-    private WarenBehaelter SearchWarenBehaelter (Ware ware) {
+    public WarenBehaelter SearchWarenBehaelter (Ware ware) {
         WarenBehaelter returnWarenBehaelter = null;
 
         for (WarenBehaelter behaelter: warenListe) {
@@ -64,8 +64,8 @@ public class Lager {
             ware = pWare;
         }
 
-        public void SetVorrat(int vorrat) {
-            vorrat = vorrat;
+        public void SetVorrat(int nvorrat) {
+            vorrat = nvorrat;
         }
 
         public int GetVorrat() {

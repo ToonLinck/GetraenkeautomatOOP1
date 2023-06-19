@@ -2,18 +2,18 @@ import java.util.List;
 
 public class Ausgabe<AusgabeType>{
 
-    private List<AusgabeType> ausgabe;
+    private AusgabeType ausgabe;
 
     public Ausgabe() {}
 
-    public List<AusgabeType> GetAusgabe() {
+    public AusgabeType GetAusgabe() {
         return ausgabe;
     }
 
     public boolean GebeAus (AusgabeType nAusgabe) {
         boolean returnBoolean = false;
         if (nAusgabe != null) {
-            ausgabe.add(nAusgabe);
+            ausgabe = nAusgabe;
             returnBoolean = true;
         }
         return returnBoolean;

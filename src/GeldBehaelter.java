@@ -1,14 +1,14 @@
 public class GeldBehaelter {
 
-    private int balance;
+    private double balance = 0;
 
     public GeldBehaelter(){}
 
-    public int GetBalance() {
+    public double GetBalance() {
         return balance;
     }
 
-    public boolean FuegeGeldHinzu (int summe) {
+    public boolean FuegeGeldHinzu (double summe) {
         boolean returnBoolean = false;
         if (summe > 0) {
             balance += summe;
@@ -18,7 +18,7 @@ public class GeldBehaelter {
         return returnBoolean;
     }
 
-    public boolean ZieheGeldAb(int summe) {
+    public boolean ZieheGeldAb(double summe) {
         boolean returnBoolean = false;
         if (balance >= summe && summe > 0) {
             balance -= summe;

@@ -1,7 +1,7 @@
 package Geld;
 
 public class Muenze  extends Geld{
-    public Muenze(int pWert) {
+    public Muenze(double pWert) {
         super(pWert);
     }
 }
