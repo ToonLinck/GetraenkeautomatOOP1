@@ -29,11 +29,16 @@ public class Constants {
     public class Waren {
         public static List<Getraenk> getraenkListe = new ArrayList<Getraenk>() {{
             add(new Getraenk("Wasser", 1.20, 10));
+            add(new Getraenk("Cola", 1.90,10));
+            add(new Getraenk("Fanta", 1.90, 10));
+            add(new Getraenk("Sports Drink", 2.10, 10));
         }};
 
         public static List<Snack> snackListe  = new ArrayList<Snack>() {{
             add(new Snack("Chips", 2.50, 10));
             add(new Snack("Snickers", 1.80, 5));
+            add(new Snack("Kinder Schokolade", 1.20, 5));
+            add(new Snack("Kaugummi", 0.50, 2));
         }};
     }
 

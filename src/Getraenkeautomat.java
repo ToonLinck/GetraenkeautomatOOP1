@@ -14,7 +14,6 @@ import java.util.List;
 public class Getraenkeautomat {
     /* Deklaration von statischen Variablen */
     static Lager lager = new Lager();
-    static GeldBehaelter kasse = new GeldBehaelter();
     static GeldBehaelter geldBoerse = new GeldBehaelter();
     static Ausgabe<Ware> warenAusgabe = new Ausgabe<Ware>();
     static Ausgabe<Double> rueckgeldAusgabe = new Ausgabe<Double>();
@@ -308,7 +307,7 @@ public class Getraenkeautomat {
 
                 JLabel warenName = new JLabel(selectedWare.GetName());
                 warenName.setFont(new Font("Bold", Font.PLAIN, 14));
-                JLabel warenPreis= new JLabel(selectedWare.GetPreis() + "€");
+                JLabel warenPreis= new JLabel(df.format(selectedWare.GetPreis()) + "€");
                 JButton warenKaufButton = new JButton("Kaufen");
                 warenKaufButton.addActionListener(new ActionListener() {
                     @Override
